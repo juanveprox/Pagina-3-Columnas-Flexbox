@@ -1,0 +1,120 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+/*Neutral*/
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__seccion1{
+    background-color: var(--Bright-orange);
+    margin: 0 5%;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border-radius: 10px 10px 0 0;
+    max-width: 350px;
+}
+
+.seccion1__titulo , .seccion2__titulo,.seccion3__titulo{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.seccion1__parrafo, .seccion2__parrafo,.seccion3__parrafo{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.boton{
+    border: none;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    color: var(--Bright-orange);
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.main__seccion2{
+    background-color: var(--Dark-cyan);
+    margin: 0 5%;
+    padding: 2.5rem;
+    max-width: 350px;
+}
+
+.boton--s2{
+    color: var(--Dark-cyan);
+}
+
+.main__seccion3{
+    background-color: var(--Very-dark-cyan);
+    margin: 0 5%;
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    max-width: 350px;
+    border-radius: 0 0 10px 10px;
+}
+.boton--s3{
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width:560px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+
+    .main__seccion1{
+        margin:0;
+        border-radius: 10px 0 0 10px;
+        max-width: 200px;
+    }
+    .main__seccion2{
+        margin:0;
+        max-width: 200px;
+        border-radius: 0 10px 10px 0;
+    }
+    .main__seccion3{
+        margin:0;
+        max-width: 200px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (min-width:840px){
+    .main__seccion2{
+        border-radius: 0 ;
+    }
+    .main__seccion3{
+        border-radius: 0 10px 10px 0;
+    }
+}
